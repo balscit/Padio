@@ -1,0 +1,19 @@
+{
+	"language": [
+		{ 
+			"name": : "tamil",
+			"channel": [
+				{
+					"id": "foxx",
+					"channelname": "Foxx FM",
+					"url": "http://67.228.177.123:9000"
+				},
+				{
+					"id": "puradsi",
+					"channelname": "Puradsi",
+					"url": "http://puradsifm.net:9994/listen.pls"
+				}
+			]
+		}
+	]
+}

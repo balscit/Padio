@@ -9,9 +9,29 @@
 					"url": "http://67.228.177.123:9000"
 				},
 				{
-					"id": "puradsi",
-					"channelname": "Puradsi",
-					"url": "http://puradsifm.net:9994/listen.pls"
+					"id": "a9",
+					"channelname": "A9 Radio",
+					"url": "http://195.154.217.103:8175"
+				},
+				{
+					"id": "illayaraja",
+					"channelname": "Illayaraja",
+					"url": "http://streaming.radionomy.com/IllayarajavinThevitathaPadalgal-"
+				},
+				{
+					"id": "arrahman",
+					"channelname": "AR Rahman",
+					"url": "http://198.245.61.183:8004"
+				},
+				{
+					"id": "sunhifi",
+					"channelname": "Sun FM Hi-Fi",
+					"url": "http://192.99.4.210:3596"
+				},
+				{
+					"id": "lankasri",
+					"channelname": "Lanka Sri",
+					"url": "http://159.253.131.114:80"
 				}
 			]
 		}

@@ -5,33 +5,48 @@
 			"channel": [
 				{
 					"id": "foxx",
-					"channelname": "Foxx FM",
+					"channelname": "Tamil - Foxx FM",
 					"url": "http://67.228.177.123:9000"
 				},
 				{
 					"id": "a9",
-					"channelname": "A9 Radio",
+					"channelname": "Tamil - A9 Radio",
 					"url": "http://195.154.217.103:8175"
 				},
 				{
 					"id": "illayaraja",
-					"channelname": "Illayaraja",
+					"channelname": "Tamil - Illayaraja",
 					"url": "http://streaming.radionomy.com/IllayarajavinThevitathaPadalgal-"
 				},
 				{
-					"id": "arrahman",
-					"channelname": "AR Rahman",
-					"url": "http://198.245.61.183:8004"
-				},
-				{
 					"id": "sunhifi",
-					"channelname": "Sun FM Hi-Fi",
+					"channelname": "Tamil - Sun FM Hi-Fi",
 					"url": "http://192.99.4.210:3596"
 				},
 				{
 					"id": "lankasri",
-					"channelname": "Lanka Sri",
+					"channelname": "Tamil - Lanka Sri",
 					"url": "http://159.253.131.114:80"
+				},
+				{
+					"id": "manasutho",
+					"channelname": "Telugu - ManasuTho",
+					"url": "http://96.30.32.42:8020"
+				},
+				{
+					"id": "radio9",
+					"channelname": "Telugu - Radio9",
+					"url": "http://174.37.252.208:8530"
+				},
+				{
+					"id": "nadam",
+					"channelname": "Malayalam - Nadam",
+					"url": "http://5.63.145.172:7070"
+				},
+				{
+					"id": "keralaradio",
+					"channelname": "Malayalam - kr.in",
+					"url": "http://192.99.18.195:8000"
 				}
 			]
 		}

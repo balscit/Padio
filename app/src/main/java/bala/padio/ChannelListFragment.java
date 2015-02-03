@@ -30,30 +30,19 @@ public class ChannelListFragment extends ListFragment {
     private final static String TAG = ChannelListFragment.class.getSimpleName();
 
     private static ChannelAdapter adapter;
+    private static ChannelListFragment instance;
 
     @Override
     public void onActivityCreated(Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+        instance = this;
 
         adapter = new ChannelAdapter(getActivity(), Settings.GetChannelList());
         setListAdapter(adapter);
 
-        // highlight selected channel
-        String selectedChannel = Settings.getSelectedChannel();
-        if(selectedChannel != null){
-            try {
-                ChannelModel selectedChannelModel = new ChannelModel(selectedChannel);
-                if(selectedChannelModel.id != null ){
-                    Log.d(TAG, "Selected channel: " + selectedChannelModel.name);
-                    getListView().setChoiceMode(ListView.CHOICE_MODE_SINGLE);
-                    getListView().setItemChecked(adapter.getPosition(selectedChannelModel), true);
-                }
-            }catch (Exception ex){
-                ex.printStackTrace();
-            }
-        }
+        getListView().setChoiceMode(ListView.CHOICE_MODE_SINGLE);
+        highlightChannel();
     }
-
 
     @Override
     public void onListItemClick(ListView l, View v, int position, long id) {
@@ -74,6 +63,24 @@ public class ChannelListFragment extends ListFragment {
             adapter.clear();
             adapter.addAll(Settings.GetChannelList());
             adapter.notifyDataSetChanged();
+            highlightChannel();
+        }
+    }
+
+    // highlight selected channel
+    private static void highlightChannel() {
+        String selectedChannel = Settings.getSelectedChannel();
+        if(instance != null && selectedChannel != null){
+            try {
+                ChannelModel selectedChannelModel = new ChannelModel(selectedChannel);
+                if(selectedChannelModel.id != null ){
+                    Log.d(TAG, "Selected channel: " + selectedChannelModel.name);
+
+                    instance.getListView().setItemChecked(adapter.getPosition(selectedChannelModel), true);
+                }
+            }catch (Exception ex){
+                ex.printStackTrace();
+            }
         }
     }
 }
